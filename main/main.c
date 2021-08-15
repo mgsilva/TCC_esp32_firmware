@@ -18,8 +18,5 @@ void app_main(){
     // Inicia aquisição de dados
     spi_init();
 
-
-    while(1){
-        vTaskDelay(pdMS_TO_TICKS(500));
-    }
+    vTaskDelete(NULL);
 }
